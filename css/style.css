@@ -121,6 +121,7 @@ input[type="search"] {
 }
 .small {
     font-size: 1.3rem;
+    font-family: "Roboto", "Lato", "Helvetica", sans-serif;
     font-style: italic;
     color: #777;
 }
