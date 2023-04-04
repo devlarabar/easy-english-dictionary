@@ -11,7 +11,7 @@ document.querySelector('#word').addEventListener("keypress", function(event) {
 
 //sentence case input
 function toSentenceCase(str) {
-    let arr = str.split('')
+    let arr = str.split('').map(x => x.toLowerCase())
     let firstLetter = arr.shift()
     arr.unshift(firstLetter.toUpperCase())
     return arr.join('')

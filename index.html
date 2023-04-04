@@ -9,22 +9,29 @@
         <!-- external stylesheets & fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chewy&family=Lato:wght@100;300;400;700&family=Rajdhani&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chewy&family=Lato:wght@100;300;400;700&family=Rajdhani&family=Roboto+Condensed:wght@300&family=Roboto+Serif:ital@0;1&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css"> <!-- normalize stylesheet -->
         <link rel="stylesheet" href="css/style.css"> <!-- main stylesheet-->
+        <script src="https://kit.fontawesome.com/ce6dc40760.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
         <main>
+            <nav>
+                <h1>Easy English Dictionary</h1>
+                <ul>
+                    <li><a href="https://github.com/devlarabar/easy-english-dictionary"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </nav>
             <header>
-                <h1>No-Frills Dictionary</h1>
+                
                 <input type="search" id="word" autocomplete="off">
                 <button id="submit">Search</button>
             </header>
             <section class="dictionary hidden">
                 <span id="wordDisplay"></span>
                 <span id="phoneticText"></span>
-                <div id="output"></div>
+                <div id="output">Welcome to the Easy English Dictionary - a no-frills, minimalist and comprehensive dictionary. To begin, type a word into the search bar and hit the <i>Enter</i> key or click <i>Submit</i>.</div>
                 <div id="phonetics"></div>
             </section>
         </main>
