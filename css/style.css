@@ -1,0 +1,115 @@
+/* ********************
+html / body styles
+******************** */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.5rem;
+    font-family: "Lato", "Helvetica", sans-serif;
+    line-height: 1.5;
+    background: #effaff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+header {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background:
+      linear-gradient(135deg,#0000 18.75%,#d1f4ff 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#d1f4ff -6.25% 6.25%,#9ce5ff 0 18.75%);
+    background-size: 224px 224px;
+}
+main {
+    width: 700px;
+    min-height: 200px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgba(118, 150, 173, 0.3);
+}
+h1 {
+    font: 3.2rem "Lato", sans-serif;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(118, 150, 173, 0.7);
+}
+input[type="search"], form, #submit {
+    display: inline-block;
+}
+form {
+    width: 100%;
+}
+input[type="search"] {
+    width: 70%;
+    height: 40px;
+    border-radius: 8px 0 0 8px;
+    border: 0px solid rgb(118, 150, 173);
+    background: #fff;
+    line-height: 40px;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font: 1.5rem "Rajdhani", "Monospace", sans-serif;
+}
+#submit {
+    width: 28%;
+    height: 40px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background: #6CBFDB;
+    color: #fff;
+    text-transform: uppercase;
+}
+#submit:hover {
+    background: #7AD8F7;
+}
+.dictionary {
+    width: 100%;
+    padding: 20px;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+#wordDisplay {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+#phoneticText {
+    display: block;
+}
+.partOfSpeech {
+    font-weight: bold;
+    font-style: italic;
+}
+.small {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #777;
+}
+/* ********************
+media queries 
+******************** */
+@media all and (max-width: 645px) {
+    h1 {
+        width: 100%;
+    }
+}

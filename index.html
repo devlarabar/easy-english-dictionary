@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Dictionary</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5027/5027426.png">
+        <!-- external stylesheets & fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chewy&family=Lato:wght@100;300;400;700&family=Rajdhani&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css"> <!-- normalize stylesheet -->
+        <link rel="stylesheet" href="css/style.css"> <!-- main stylesheet-->
+    </head>
+    <body>
+
+        <main>
+            <header>
+                <h1>No-Frills Dictionary</h1>
+                <input type="search" id="word" autocomplete="off">
+                <button id="submit">Search</button>
+            </header>
+            <section class="dictionary hidden">
+                <span id="wordDisplay"></span>
+                <span id="phoneticText"></span>
+                <div id="output"></div>
+                <div id="phonetics"></div>
+            </section>
+        </main>
+        
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
